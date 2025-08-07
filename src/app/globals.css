@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer components {
+  .top-nav {
+    @apply top-0 fixed w-full;
+    @apply bg-[#FCFDFD] py-3 px-3 sm:px-5 md:px-7 lg:px-8 xl:px-9 2xl:px-11;
+    @apply flex flex-row justify-between z-50;
+  }
+  .topnav-right-button {
+    @apply w-[20px] xl:w-[24px] 2xl:w-[26px] h-auto;
+  }
+  .topnav-right-button-user {
+    @apply w-[32px] xl:w-[35px] 2xl:w-[37px] h-auto;
+  }
+}
+
+.sidenav-left {
+  /* @apply min-h-[calc(100vh-56px)] xl:min-h-[calc(100vh-59px)] max-h-full p-3; */
+  @apply fixed top-[57.5px] xl:top-[60.5px] bg-[#FCFDFD];
+  @apply overflow-y-auto shrink-0;
+  @apply min-h-[calc(100vh-56px)] xl:min-h-[calc(100vh-59px)] max-h-[calc(100%-56px)] xl:max-h-[calc(100%-59px)] z-50;
+  @apply px-3 md:px-[10px] lg:px-[20px] xl:px-[35px];
+}
+.sidenav-left {
+  @apply pb-2 md:py-3;
+}
+.sidenav-left-button {
+  @apply flex flex-row items-center py-2 px-3;
+}
+.sidenav-left-button-image {
+  @apply w-[20px] xl:w-[22px] 2xl:w-[24px] h-auto;
+}
+.sidenav-left-button-word {
+  @apply pl-3 text-base md:text-sm lg:text-base text-left;
+}
+.main-content {
+  /* @apply min-h-[calc(100vh-56px)] xl:min-h-[calc(100vh-59px)] max-h-full p-3; */
+  @apply pt-[calc(56px)] xl:pt-[calc(59px)];
+  @apply px-5 md:pl-[15px] md:pr-[18px] lg:pl-[12.5px] lg:pr-[25px] xl:pl-[17.5px] xl:pr-[35px];
+  @apply bg-[#FCFDFD];
+  /* @apply min-h-[calc(100vh-56px)] xl:min-h-[calc(100vh-59px)] max-h-[calc(100%-56px)] xl:max-h-[calc(100%-59px)]; */
+  /* @apply flex; */
+  @apply min-h-screen;
+  /* @apply w-[88%]; */
+}
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
