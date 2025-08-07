@@ -18,8 +18,8 @@ const WalletHeader: NextPage<Props> = ({ dashboardNav, setDashboardNav }) => {
   const icons = [PurityBliss, UserOne, UserTwo, UserFour];
   return (
     <div className="my-4 md:my-6 lg:my-7">
-      <div className="flex items-center justify-between flex-wrap mb-4 lg:mb-5">
-        <div className="flex items-center gap-4 mb-4 md:mb-2">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between flex-wrap mb-4 lg:mb-5">
+        <div className="flex items-center gap-4 mb-4 sm:mb-0">
           <button className="flex flex-row items-center gap-1 border-[1.5px] py-1 px-2 border-transparent hover:border-[rgba(73,_101,_110,_0.2)] hover:bg-gray-100 rounded-[16px]">
             <h1 className="text-xl md:text-2xl font-bold text-[#1B2528]">
               Wallet Ledger
